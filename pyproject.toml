@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "embedded_encrypt"
+version = "0.1.0"
+description = ""
+authors = ["Jeff McGehee <jlmcgehee21@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^2.7"
+
+[tool.poetry.dev-dependencies]
+platformio = "^3.6"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

@@ -1,0 +1,23 @@
+{
+  "name": "ArduinoJson",
+  "keywords": "encryption",
+  "description": "Simple encryption for embedded devices",
+  "homepage": "https://github.com/verypossible/embedded_encrypt",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/verypossible/embedded_encrypt"
+  },
+  "version": "0.1.0",
+  "authors": {
+    "name": "Jeff McGehee"
+  },
+  "exclude": [],
+  "dependencies": [
+    {
+      "name": "AES",
+      "version": "git+ssh://git@github.com/verypossible/AES#master"
+    }
+  ],
+  "frameworks": "arduino",
+  "platforms": "*"
+}
