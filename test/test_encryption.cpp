@@ -10,7 +10,7 @@ void tearDown(void) {
   // clean stuff up here
 }
 
-void test_function_should_doBlahAndBlah(void) {
+void test_encrypt_decrypt(void) {
 
   unsigned long long int initVector = 36753562;
   Encryption enc((unsigned char *)"0123456789010123", initVector);
@@ -28,6 +28,15 @@ void test_function_should_doBlahAndBlah(void) {
 
   TEST_ASSERT_EQUAL_STRING((const char *)decryptedBuffer,
                            (const char *)"foobar");
+}
+
+// not needed when using generate_test_runner.rb
+void setup(void) {
+  UNITY_BEGIN();
+
+  RUN_TEST(test_encrypt_decrypt);
+
+  UNITY_END();
 }
 
 void loop(void) {}
