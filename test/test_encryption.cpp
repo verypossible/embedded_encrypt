@@ -1,5 +1,5 @@
 #ifdef UNIT_TEST
-#include "Encryption.h"
+#include "VeryEncrypt.h"
 #include "unity.h"
 
 void setUp(void) {
@@ -13,7 +13,7 @@ void tearDown(void) {
 void test_encrypt_decrypt(void) {
 
   unsigned long long int initVector = 36753562;
-  Encryption enc((unsigned char *)"0123456789010123", initVector);
+  VeryEncrypt enc((unsigned char *)"0123456789010123", initVector);
 
   unsigned char encryptedBuffer[20] = {};
 
