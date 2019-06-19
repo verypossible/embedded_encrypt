@@ -1,9 +1,9 @@
-#include "Encryption.h"
+#include "VeryEncrypt.h"
 
 AES aes;
 
-void Encryption::encrypt(unsigned char plain[], unsigned char encryptedBuffer[],
-                         int size) {
+void VeryEncrypt::encrypt(unsigned char plain[],
+                          unsigned char encryptedBuffer[], int size) {
   int bits = 128;
   aes.iv_inc();
   byte iv[N_BLOCK];
@@ -13,8 +13,8 @@ void Encryption::encrypt(unsigned char plain[], unsigned char encryptedBuffer[],
   aes.do_aes_encrypt(plain, size, encryptedBuffer, _key, bits, iv);
 }
 
-void Encryption::decrypt(unsigned char encrypted[],
-                         unsigned char decryptedBuffer[], int size) {
+void VeryEncrypt::decrypt(unsigned char encrypted[],
+                          unsigned char decryptedBuffer[], int size) {
   int bits = 128;
   byte iv[N_BLOCK];
 

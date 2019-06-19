@@ -1,12 +1,12 @@
 #include <AES.h>
 
-#ifndef ENCRYPTION_H
-#define ENCRYPTION_H
+#ifndef VERY_ENCRYPT_H
+#define VERY_ENCRYPT_H
 
-class Encryption {
+class VeryEncrypt {
 
 public:
-  Encryption(unsigned char *key, unsigned long long int initVector) {
+  VeryEncrypt(unsigned char *key, unsigned long long int initVector) {
     _key = key;
     _initVector = initVector;
   }
